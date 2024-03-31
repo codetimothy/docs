@@ -1,0 +1,30 @@
+{
+  "name": "magisk-chinese-document",
+  "version": "26.4",
+  "description": "Magisk 中文文档",
+  "main": "index.js",
+  "author": "Jesse205",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "sass": "^1.69.5",
+    "vitepress": "1.0.0-rc.32"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
